@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para el más bobo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="inicio" id="inicio" onclick="iniciarTodo()">
+    <p>No pude hacer más que esto</p>
+  </div>
+
+  <audio id="musicaIntro" loop>
+    <source src="lovers' oath.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="stars stars1"></div>
+  <div class="stars stars2"></div>
+  <div class="stars stars3"></div>
+
+  <h1>Feliz San Valentín <3</h1>
+
+  <div class="menu">
+    <button class="btn" onclick="abrirCarta()"><3</button>
+    <button class="btn" onclick="abrirRecuerdo()">Uh</button>
+  </div>
+
+  <div class="overlay" id="carta" onclick="cerrarCarta()">
+    <div class="carta" onclick="event.stopPropagation()">
+      <img src="carta.png" class="carta-img">
+
+      <div class="carta-texto">
+        <p>
+          Q mal, ni m gustó la letra de esta cuestión, es rara. Me caes tan, pero tan mal q t quiero besar, miauu. Viste como me tienes? Haciendo esto aunq me da pena hasta pensar que lo vas a leer, que vergüenza, q mal. 
+
+Te amo.
+
+Me quedó chueco, los espacios no coinciden con el fondo, pero es con amor, supongo que eso es lo q importa lel lol.
+
+Me tomó tantito hacer esto, tenía mucho más en mente, me da pena que no haya alcanzado, chambear debió ser más importante que mi sueño, qmal, el próximo lo hago super-mega-hiper producido, ok?
+
+Mmmm,, ns, q mal,,,,,,,,,,, sé que soy complicada, te amo por aguantarme hasta ahora a pesar de todo, a pesar de que me da miedo hasta respirar:  miedo a sentir, miedo a no sentir, a no sientan como yo, a obligarme a sentir, a obligar a sentir, a perderme, a perder, Y NOSE, a un buen de cosas. Pero sigues aquí, estoy tan feliz por eso. Perdón por ser tea. 
+
+Te amo.
+
+Creo que todo es un tipo de aprendizaje, experiencias que te forman como persona, trato de ver que todo es eso, un aprendizaje, también lo eres? Supongo que si? Ns, cuando lo tomo como aprendizaje suena a algo que acabó o va a acabar, y uno toma lo mejor de eso,,, no quiero que te acabes, no puedo evitar pensar en lo mucho que me dolería perderte, odio pensar en que algo contigo pueda ser en vano.
+
+Sería realmente en vano?
+Creo q no.
+
+Me gusta como me haces sentir, aunq no t entienda y m pierda en mi tea-dad. Aunq no creí q lo haría, me gusta pensar en un futuro más lejano de lo que esperaba contigo, porque si, me aterran mis altas y absurdas expectativas de la vida, ysi, quiero ser libre y estar tranquila aunq a veces veo que el día en el que lo seré no llegará conmigo en vida,,,,,,,pero quiero intentarlo, contigo.
+
+Ojalá en mi hipotética libertad poder elegirte siempre a ti.
+
+ODIO SER DRAMATICA PERO BUE, PA MÁS TENGO MÁS PENA DE LO USUAL.
+
+Suenas como mi música favorita, cuando la escucho pienso en tí. Quería hacer algo lindo pa meter la música conla q t pienso en esto, pero como ves, no m dió el tiempo, QUEMAAAAAL, voy a llorar,,,,,,, pero si, ahí está el sentimiento, estás en muchas de las canciones que suelo escuchar.
+
+Que más,,,, que no se note que esto lo tire como una lluvia de ideas pq no se pensar y luego se lo pasé a gpt pa q m lo una, no me haya gustado, asi q lo volviera a escribir a última hora con erratas y aún más desordenado,,,, nooo, para nada fue eso pippipipipi. Mmmm, no me gusta la idea de ser vieja, ns si me asusta o solo me desagrada la idea, me gustaría ser joven POR SIEMPRE, pero no se puede, asiq velo por q todo (dentro de lo q puedo) valga la pena,,,, creo q vales la pena. Aunq si muriese joven…mmm,,, si es el caso y existiesen más vidas, me gustaría encontrarte en todas, pa molestarte una y otra vez, en cada una.
+
+QUERÍA HACER MÁAAAASSS, UQ PENAAA, PA MÁS LA CARTA ME QUEDÓ CORTA Y NO ALCANCÉ A DIBUJAR LAS FLORES GAHHHHHH, pero bue pipipi, pa otra te escribo mi corazón completo, oka? Va a ser aún más desordenado asi q preparate wuaja.
+
+Te amo mucho Benjamin, quisiera poder demostrarlo más.
+Te amo.
+
+PD: Si aún no lo haces toca a lo gatitos, aunq si está bien obvio, sería muy pendejo de tu parte no haberlo hecho aún owo.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="recuerdo" onclick="cerrarRecuerdo()">
+    <div class="recuerdo-wrap" onclick="event.stopPropagation()">
+
+      <h2>Hola tonoto</h2>
+
+      <p>
+        Eres muy bobo, sabías?
+      </p>
+
+      <p id="contador"></p>
+
+      <img src="flores.png" class="arbol-img">
+
+    </div>
+  </div>
+
+<div class="gatitos-wrap">
+  <img src="gatitos.png" class="gatitos normal">
+  <img src="gatitos_cariño.png" class="gatitos carino">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
